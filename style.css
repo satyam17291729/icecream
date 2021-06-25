@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary:blue;
+    --secondary:rebeccapurple;
+    --third:black;
+}
+.back{
+    height:85vh;
+    background-image: url("home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    background-color:blue;
+    background-blend-mode:darken;
+    
+    
+}
+.varity{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    background-size: cover;
+}
+.item{
+    margin: 5px;
+    height: 400px;
+    width: 300px;
+    
+}
+.item:hover{
+    opacity: 0.7;
+}
+.item img{
+height: 400px;
+width: 300px;
+}
+.list{
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--third);
+}
+.list li{
+   padding: 2vw;
+   list-style: none;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 29px;
+}
+.list li a:hover{
+    color: gray;
+    border-bottom: 3px solid gray;
+    transition: 2s;
+}
+.form{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: var(--secondary);
+    background-size: cover;
+}
+.form form{
+    margin-left: 200px;
+}
+.form form input{
+    display: block;
+    height: 30px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+.form form h1{
+    display: inline;
+    color:whitesmoke;
+}
+#about{
+    font-size: 50px;
+    text-align: justify;
+    color:rgb(243, 9, 243);
+}
+.ani{
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes blink{
+    0%{
+        background-color: chartreuse;
+        transform: translateX(20px);
+        transform: rotateX(360deg);
+    }
+    25%{
+        background-color: darkblue;
+        transform: rotateY(59960deg);
+    }
+    50%{
+        background-color: darkred;
+        transform: rotateX(360deg);
+    }
+    75%{
+        background-color: fuchsia;
+        transform: rotateY(59960deg);
+       
+    }
+    100%{
+        background-color: linen;
+        transform: translateX(-20px);
+        transform: rotateX(560deg);
+    }
+}
+
+.dark{
+    --primary:black;
+    --secondary:black;
+    --third:black; 
+}
